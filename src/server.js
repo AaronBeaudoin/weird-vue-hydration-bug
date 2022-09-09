@@ -21,11 +21,12 @@ export async function renderPage(pageContext) {
       <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+        <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgo=">
         <title>Weird Vue Bug Reproduction</title>
       </head>
       <body>
         <div id="app">${_}</div>
-        <script type="module" src="/entrypoints/client.js"></script>
+        <script type="module" src="/src/client.js"></script>
       </body>
     </html>
   `;

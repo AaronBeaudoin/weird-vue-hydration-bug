@@ -25,7 +25,7 @@ resolveConfig({}, "serve").then(async viteConfig => {
     response.locals.custom = true;
 
     try {
-      const module = await vite.ssrLoadModule("/entrypoints/server.js");
+      const module = await vite.ssrLoadModule("/src/server.js");
       const pageContext = await module.renderPage({ url: request.originalUrl });
       const renderResponse = pageContext.httpResponse;
 
